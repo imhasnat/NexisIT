@@ -2,4 +2,4 @@
 
 
 
-Technology & Package used: React.js, Tailwind, React query, React-hook-form, React-icons, React-toastify
+#### Technology & Package used: React.js, Tailwind, React query, React-hook-form, React-icons, React-toastify

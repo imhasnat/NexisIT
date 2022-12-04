@@ -4,25 +4,30 @@ import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUpForm/SignUp';
 import TableDatas from './Pages/TableData/TableDatas';
 import { ToastContainer } from 'react-toastify';
+import ErrorPage from './Pages/ErrorPage/ErrorPage';
 
 function App() {
 
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <SignUp></SignUp>
+      element: <SignUp></SignUp>,
+      errorElement: <ErrorPage></ErrorPage>
     },
     {
       path: '/login',
-      element: <Login></Login>
+      element: <Login></Login>,
+      errorElement: <ErrorPage></ErrorPage>
     },
     {
       path: '/signup',
-      element: <SignUp></SignUp>
+      element: <SignUp></SignUp>,
+      errorElement: <ErrorPage></ErrorPage>
     },
     {
       path: '/table',
-      element: <TableDatas></TableDatas>
+      element: <TableDatas></TableDatas>,
+      errorElement: <ErrorPage></ErrorPage>
     }
   ])
 
