@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import React from 'react';
 import { useState } from 'react';
 import logo from '../../assets/ultimate hrm logo-05-02 2.png';
+import Loading from '../Loading/Loading';
 
 const TableDatas = () => {
     const [keys, setKeys] = useState([]);
@@ -27,8 +28,9 @@ const TableDatas = () => {
     })
 
     if (isLoading) {
-        return <h1>Loading...............</h1>
+        return <Loading></Loading>
     }
+
     return (
         <div>
             <img className='mt-12 ml-14 hidden md:block' src={logo} alt="" />
